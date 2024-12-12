@@ -18,9 +18,27 @@ Go to https://www.kaggle.com/datasets/anshtanwar/monthly-food-price-estimates/da
 
 ### Dependencies
 
+Import Requirements
 ```
 pip install -r requirements.txt
 ```
+
+command to creat any SQL entries that need to go into the database:
+```
+python manage.py makemigrations
+```
+
+Apply's the migrations
+```
+python manage.py migrate 
+```
+
+This will create the administrator login
+```
+python manage.py createsuperuser
+```
+
+Remember to use *py -m* before pastint these commands if running a windows machine.
 
 ### Executing program
 
@@ -30,7 +48,7 @@ py main.py
 
 ### Output 
 
-This should create 5 graphs in Charts for each of the 5 stocks.
+This will create a django webpage.
 
 
 ## Author
@@ -42,3 +60,7 @@ Kadin Heacock
 [Professor Zeller]
 
 [Python Packages](https://packaging.python.org/en/latest/tutorials/installing-packages/)
+
+[Toolbar](https://django-debug-toolbar.readthedocs.io/en/latest/)
+
+[DJango Docs](https://docs.djangoproject.com/en/4.2/)
